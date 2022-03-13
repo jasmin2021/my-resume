@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--Added the projects box and fixed some bugs related to responsiveness-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume</title>
+    <style>
+        #myPicture{
+            max-width: 40%;
+            height: auto;
+            align-self: center;
+            justify-items: center;
+            
+        }
+        @media (max-width: 410px){
+            
+            .bodyClass{
+                height:fit-content;
+                width: fit-content;
+            }
+            .elementsGrid{
+                width: 100%;
+            }
+            
+            .aboutme{
+                font-size: 11px;
+            }
+
+            .education{
+                font-size: smaller;
+            }
+            
+        }
+        
+
+        .image{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height:fit-content;
+            width: fit-content;
+            background: linear-gradient(35deg, rgb(121,165,170),rgb(108,200,142));
+            border-radius: 5px;
+            
+        }
+        
+        .bodyClass{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            flex-direction: column;
+            
+
+        }
+
+        body{
+            background-color: #1e1e20;
+            
+        
+        }
+
+
+        .aboutme{
+            background-color: rgb(245,195,70);
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            border-radius: 5px;
+            color: rgb(7,18,47);
+            
+            
+            
+        }
+        .education{
+            background-color: rgb(7,18,47);
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            border-radius: 5px;
+            color: rgb(245,195,70);
+            
+            
+        }
+
+        .skills{
+            background-color: rgb(7,18,47);
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            border-radius: 5px;
+            color: rgb(245,195,70);
+            
+        }
+
+        .interests{
+            background-color: rgb(245,195,70);
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            border-radius: 5px;
+            color: rgb(7,18,47);
+        }
+        .email{
+            background-color: crimson;
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            border-radius: 5px;
+        }
+
+        .projects{
+            background-color: rgb(49, 49, 255);
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            border-radius: 5px;
+            margin-bottom: 1%;
+        }
+
+        #ime{
+            
+            text-align: center;
+            font-family: Pacifico;
+            
+        }
+        .elementsGrid{
+            display: grid;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 25%;
+            margin-right: 25%;
+            justify-content: space-around;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+            
+            
+        }
+
+        .soc-media{
+            margin-top: 1%;
+            background-color: rgba(250, 169, 62, 0.897);
+            width: 512px;
+            border-radius: 5px;
+        }
+        .soc-media ul{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .soc-media li{
+            list-style-type: none;
+            padding: 20px;
+        }
+        .soc-media a{
+            text-decoration: none;
+            padding: 20px;
+            color: rgb(145, 73, 32);
+        }
+        .soc-media a:hover{
+            color: black;
+        }
+
+        .soc-media li:hover{
+            background-color: antiquewhite;
+        }
+
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="bodyClass">
+<div class="image">
+    <h1 id="ime"><em>Jasmin Pazelja</em></h1>
+    
+    <img src="https://i.imgur.com/bbWXbiG.jpg" title="source: imgur.com" id="myPicture"/></a>
+    <p><em> 20 years / Tuzla / student </em></p>
+    </div>
+
+    <div class="elementsGrid">
+    <div class="aboutme">
+    
+        <em><h3>about me</h3></em>
+
+    <p>
+        I am a reliable programmer willing to learn and work as a part of a team. I love to solve problems and make
+        apps that are both good looking and functional. I am focused on providing the best user experience for all usere.
+        I have the most experience in Java programming in Android Studio.<br>
+    </p>
+    
+    </div>
+
+
+
+    
+    <div class="education">
+        <em><h3>education</h3></em>
+
+        <h4>Srednja medicinska škola Tuzla</h4>
+        <p>Tuzla</p>
+        <p>Bosnia and Herzegovina, 75000</p>
+        <p>
+            <strong>Diploma: </strong>
+            Nurse(2020)
+        </p>
+    </div>
+
+
+
+
+    <div class="skills">
+        <em><h3>skills</h3></em>
+
+        <ul>
+            <li>Java</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>Android Studio</li>
+            <li>Flutter Framework</li>
+        </ul>
+
+
+    </div>
+
+    <div class="interests">
+     <em><h3>personal interests</h3></em>
+
+    <ol>
+        <li>Game Development</li>
+        <li>UX Design</li>
+        <li>Android Development</li>
+    </ol>
+    </div>
+
+
+    
+    </div>
+
+    <div class="projects">
+    
+        <em><h3>projects</h3></em>
+
+        <ol>
+            <li>Weather App for Android Phones</li>
+            <li>Top 10 App for Android Phones</li>
+            <li>Instagram Clone App for Android Phones</li>
+        </ol>
+
+    
+    </div>
+
+
+
+    <div class="email">
+        Email: jasminpazelja1@gmail.com
+    </div>
+
+
+    <div class="soc-media">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jasmin-pazelja-761860230/">Linkedin</a></li>
+            <li><a href="https://www.facebook.com/jasmin.pazelja">Facebook</a></li>
+            <li><a href="https://github.com/jasmin2021">Github</a></li>
+        </ul>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
